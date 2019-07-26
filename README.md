@@ -69,3 +69,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Development features:
+
+In this front-end app, I developed the functions for signIn, signUp and ForgetPassword pages. The signUp page will validate
+
+each text field. If one text field failed the validation, the corresponding error message will pop up. After the user successfully
+
+sign up. The user will be redirected to the sign in page. I used the fetch method to fetch the api calls from frontend api to check if
+
+the username matches the password. If the user log in successfully, a session will be created and it will last for 1 hour and the user
+
+will be redirected to dashboard page. The user's referral code will be retrieved by the fetch method and posted on the bottom-left corner.
+
+After one hour, the user will be forced to log in again. By using the fetch method for the reset_password api call, the user will receive
+
+a verification email after he/she submit the email address on the forgetpassword page.

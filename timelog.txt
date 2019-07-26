@@ -1,0 +1,5 @@
+signUp: 31 mins
+signIn: 22 mins
+sessionManagement: 2 hours
+dashboard: 12 mins
+Forgetpassword: 11 mins

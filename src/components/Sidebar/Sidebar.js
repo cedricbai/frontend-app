@@ -3,7 +3,7 @@ import './Sidebar.scss';
 import Sidebar, {SidebarStyles} from 'react-sidebar';
 
 class LeftSidebar extends Component {
-
+  //receive the referral code through the props.
   render(){
     return (
         <div className="sidebar-container">
@@ -60,7 +60,7 @@ class LeftSidebar extends Component {
                     <span>Logout</span>
                 </li>
                 <li className="nav-item">
-                    <span>Referral Code</span>
+                    <span>Referral Code: {this.props.value}</span>
                 </li>
                 </div>
             </ul>

@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from "react-dom";
+import { withCookies } from 'react-cookie';
 import { Route, Switch, Redirect } from "react-router-dom";
-
+import { useCookies } from 'react-cookie';
 import { SignIn, SignUp, ForgotPassword, Dashboard } from './pages';
 import './App.scss';
 
 function App() {
+  const [cookies, setCookie] = useCookies(['userName']);
   return (
     <div className="App">
         <Switch>
